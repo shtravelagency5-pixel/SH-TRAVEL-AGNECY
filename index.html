@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SH Travel Agency | Karachi</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fc;color:#172033}
+:root{--navy:#061a35;--navy2:#0c2d55;--gold:#d4af37;--gold2:#f3d778;--white:#fff;--gray:#6b7280;--light:#f5f7fb;--border:#e3e7ef;--shadow:0 15px 45px rgba(0,0,0,.10)}
+a{text-decoration:none;color:inherit}button,input,select,textarea{font-family:inherit}.container{width:92%;max-width:1200px;margin:auto}
+.topbar{background:var(--navy);color:#fff;padding:9px 0;font-size:13px}.topbar-content{display:flex;justify-content:space-between;align-items:center}.topbar span{margin-right:20px}
+.navbar{background:#fff;position:sticky;top:0;z-index:999;box-shadow:0 2px 15px rgba(0,0,0,.08)}.nav-content{min-height:78px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:12px}.logo-icon{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);display:flex;justify-content:center;align-items:center;font-weight:bold;font-size:20px;box-shadow:0 8px 20px rgba(6,26,53,.2)}.logo-text{font-weight:900;font-size:19px;color:var(--navy)}.logo-text small{display:block;color:var(--gold);font-size:9px;letter-spacing:2px;margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:23px;font-size:14px;font-weight:bold}.nav-links a:hover{color:var(--gold)}.nav-button{background:var(--gold);color:var(--navy)!important;padding:12px 18px;border-radius:8px}.menu{display:none;font-size:27px;border:0;background:none;color:var(--navy)}
+.hero{min-height:650px;display:flex;align-items:center;color:#fff;position:relative;background:linear-gradient(90deg,rgba(3,17,35,.95),rgba(3,17,35,.65),rgba(3,17,35,.15)),url("https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=2000&q=90");background-size:cover;background-position:center}.hero-content{max-width:750px;padding-bottom:80px}.hero-tag{color:var(--gold2);font-weight:bold;letter-spacing:3px;text-transform:uppercase;margin-bottom:20px}.hero h1{font-size:65px;line-height:1.05;margin-bottom:20px}.hero h1 span{color:var(--gold2)}.hero p{font-size:18px;line-height:1.7;color:#e6edf6;max-width:650px;margin-bottom:30px}.btn{display:inline-block;padding:14px 23px;border-radius:9px;font-weight:bold;border:none;cursor:pointer}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{border:1px solid #fff;color:#fff;margin-left:8px}
+.booking{margin-top:-80px;position:relative;z-index:10}.booking-box{background:#fff;border-radius:18px;padding:20px;box-shadow:var(--shadow)}.tabs{display:flex;gap:8px;margin-bottom:20px;overflow:auto}.tab{border:0;padding:11px 18px;background:#eef2f7;color:#526074;border-radius:8px;font-weight:bold;cursor:pointer;white-space:nowrap}.tab.active{background:var(--navy);color:#fff}.booking-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.field label{display:block;font-size:11px;font-weight:bold;color:var(--gray);margin-bottom:6px;text-transform:uppercase}.field input,.field select,.field textarea{width:100%;border:1px solid var(--border);border-radius:8px;padding:13px;outline:none;background:#fff}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.search-btn{background:var(--gold);border:0;border-radius:8px;font-weight:bold;color:var(--navy);cursor:pointer;margin-top:19px}
+.section{padding:100px 0}.section-light{background:var(--light)}.section-heading{text-align:center;max-width:700px;margin:0 auto 45px}.section-heading small{color:#a17c14;font-weight:bold;letter-spacing:2px;text-transform:uppercase}.section-heading h2{font-size:40px;color:var(--navy);margin:8px 0 12px}.section-heading p{color:var(--gray)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08);transition:.3s}.card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}.card-image{height:220px;background-size:cover;background-position:center;position:relative}.badge{position:absolute;left:15px;top:15px;background:var(--gold);color:var(--navy);padding:7px 11px;border-radius:6px;font-size:11px;font-weight:bold}.card-content{padding:20px}.card-content h3{color:var(--navy);margin-bottom:8px}.card-info{display:flex;justify-content:space-between;color:var(--gray);font-size:13px;margin:10px 0}.price{color:var(--navy);font-size:22px;font-weight:bold}.price small{font-size:12px;color:var(--gray)}.card-buttons{display:flex;gap:8px;margin-top:15px}.card-buttons button{flex:1;padding:11px;border:0;border-radius:7px;font-weight:bold;cursor:pointer}.details{background:#edf1f6;color:var(--navy)}.book{background:var(--navy);color:#fff}
+.destinations{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.destination{height:270px;border-radius:16px;overflow:hidden;position:relative;background-size:cover;background-position:center;color:#fff}.destination:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.85))}.destination-content{position:absolute;bottom:20px;left:20px;z-index:2}.destination h3{font-size:22px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{background:#fff;border:1px solid var(--border);border-radius:15px;padding:25px;transition:.3s}.service:hover{transform:translateY(-5px);border-color:var(--gold)}.service-icon{width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:#fff6d7;color:#9b7510;border-radius:12px;font-size:24px;margin-bottom:16px}.service h3{color:var(--navy);margin-bottom:8px}.service p{color:var(--gray);font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-image{height:500px;border-radius:22px;background:url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85") center/cover;position:relative}.about-box{position:absolute;right:-25px;bottom:25px;background:#fff;padding:20px;border-radius:14px;box-shadow:var(--shadow);width:210px}.about-box strong{display:block;font-size:30px;color:var(--navy)}.about-content h2{font-size:40px;color:var(--navy);margin:10px 0 20px}.about-content p{color:var(--gray);line-height:1.8}.check{margin:15px 0}.check span{color:var(--gray)}.check b{color:var(--gold)}
+.umrah-box{background:linear-gradient(90deg,rgba(5,24,49,.96),rgba(5,24,49,.72)),url("https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&w=1600&q=85") center/cover;color:#fff;border-radius:25px;padding:70px}.umrah-box h2{font-size:42px;margin-bottom:15px}.umrah-box p{max-width:650px;color:#dce5f1;margin-bottom:25px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{text-align:center}.step-number{width:58px;height:58px;border-radius:50%;background:var(--navy);color:var(--gold2);display:flex;align-items:center;justify-content:center;margin:auto auto 15px;font-weight:bold}.step p{color:var(--gray);margin-top:8px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:#fff;border:1px solid var(--border);padding:25px;border-radius:15px}.stars{color:var(--gold);font-size:18px}.review p{color:var(--gray);margin:15px 0}
+.blog{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.blog-image{height:200px;background-size:cover;background-position:center}.blog-content{padding:20px}.blog-content small{color:#a17c14;font-weight:bold}.blog-content h3{color:var(--navy);margin:8px 0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact-info{background:var(--navy);color:#fff;border-radius:20px;padding:40px}.contact-info h2{font-size:36px;margin-bottom:15px}.contact-item{margin:20px 0;color:#dbe4ef}.contact-form{background:#fff;padding:35px;border-radius:20px;box-shadow:var(--shadow)}.contact-form .field{margin-bottom:15px}.contact-form textarea{min-height:120px}
+.newsletter{background:linear-gradient(135deg,var(--navy),var(--navy2));border-radius:22px;color:#fff;padding:45px;display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter h2{font-size:32px}.newsletter-form{display:flex;min-width:430px}.newsletter-form input{flex:1;border:0;padding:15px;border-radius:8px 0 0 8px}.newsletter-form button{background:var(--gold);color:var(--navy);border:0;padding:0 20px;font-weight:bold;border-radius:0 8px 8px 0}
+footer{background:#031124;color:#9fafc5;padding:65px 0 20px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px}.footer-title{color:#fff;font-size:20px;font-weight:bold;margin-bottom:15px}.footer h4{color:#fff;margin-bottom:15px}.footer-links{display:grid;gap:10px;font-size:14px}.footer-links a:hover{color:var(--gold)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;font-size:13px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:3000;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{width:min(600px,100%);background:#fff;border-radius:18px;padding:30px;position:relative;max-height:90vh;overflow:auto}.close{position:absolute;right:15px;top:15px;width:35px;height:35px;border:0;border-radius:50%;cursor:pointer;font-size:20px}.modal-box h2{color:var(--navy);margin-bottom:20px}.modal-form{display:grid;gap:14px}
+.toast{position:fixed;right:20px;bottom:20px;background:var(--navy);color:#fff;padding:15px 20px;border-radius:9px;transform:translateY(100px);transition:.3s;z-index:5000}.toast.show{transform:translateY(0)}
+
+/* ================= 24/7 AI SUPPORT ================= */
+.ai-support-btn{position:fixed;right:22px;bottom:22px;width:66px;height:66px;border:0;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);font-size:27px;cursor:pointer;z-index:6000;box-shadow:0 12px 35px rgba(0,0,0,.25);transition:.25s}
+.ai-support-btn:hover{transform:scale(1.08)}
+.ai-pulse{position:absolute;inset:-5px;border:2px solid var(--gold);border-radius:50%;animation:aiPulse 1.8s infinite;pointer-events:none}
+@keyframes aiPulse{0%{transform:scale(.95);opacity:.9}70%{transform:scale(1.18);opacity:0}100%{opacity:0}}
+.ai-chat{position:fixed;right:22px;bottom:100px;width:390px;max-width:calc(100vw - 30px);height:620px;max-height:calc(100vh - 125px);background:#fff;border-radius:20px;box-shadow:0 25px 70px rgba(0,0,0,.28);overflow:hidden;z-index:5999;display:none;flex-direction:column;border:1px solid #e6eaf0}
+.ai-chat.open{display:flex}
+.ai-head{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:18px;display:flex;align-items:center;justify-content:space-between}
+.ai-head-left{display:flex;align-items:center;gap:12px}.ai-avatar{width:44px;height:44px;border-radius:14px;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:bold}.ai-head strong{display:block;font-size:15px}.ai-online{font-size:11px;color:#bfe8c7;margin-top:3px}.ai-close{border:0;background:transparent;color:#fff;font-size:23px;cursor:pointer}
+.ai-agent-bar{padding:10px 12px;background:#f6f8fc;border-bottom:1px solid var(--border)}.ai-agent-bar select{width:100%;padding:9px;border:1px solid var(--border);border-radius:8px;outline:0;background:#fff;color:var(--navy);font-weight:bold}
+.ai-messages{flex:1;overflow:auto;padding:15px;background:#fbfcfe}.ai-msg{display:flex;margin-bottom:12px}.ai-msg.user{justify-content:flex-end}.ai-bubble{max-width:82%;padding:11px 13px;border-radius:14px;background:#fff;border:1px solid #e6eaf0;color:#26344a;font-size:13px;line-height:1.5}.ai-msg.user .ai-bubble{background:var(--navy);color:#fff;border-color:var(--navy);border-bottom-right-radius:4px}.ai-msg.bot .ai-bubble{border-bottom-left-radius:4px}.ai-agent-name{font-size:10px;color:#9b7510;font-weight:bold;margin-bottom:3px}
+.ai-quick{display:flex;gap:6px;padding:8px 12px;overflow:auto;border-top:1px solid var(--border);background:#fff}.quick-btn{white-space:nowrap;border:1px solid #dce2eb;background:#fff;color:var(--navy);padding:7px 9px;border-radius:20px;font-size:11px;cursor:pointer}.quick-btn:hover{border-color:var(--gold);background:#fffaf0}
+.ai-input-row{display:flex;gap:7px;padding:10px;border-top:1px solid var(--border);background:#fff}.ai-input{flex:1;border:1px solid var(--border);border-radius:10px;padding:11px;outline:none;font-size:13px}.ai-send{width:44px;border:0;border-radius:10px;background:var(--gold);color:var(--navy);font-size:18px;font-weight:bold;cursor:pointer}
+.ai-disclaimer{font-size:9px;color:#9aa3b1;text-align:center;padding:5px 10px 8px;background:#fff}
+
+/* RESPONSIVE */
+@media(max-width:1000px){.nav-links{gap:12px}.booking-grid{grid-template-columns:repeat(3,1fr)}.destinations{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:750px){.topbar-content{justify-content:center;text-align:center}.topbar .right{display:none}.menu{display:block}.nav-links{display:none;position:absolute;left:0;right:0;top:78px;background:#fff;padding:20px;flex-direction:column;align-items:stretch;box-shadow:0 15px 30px rgba(0,0,0,.1)}.nav-links.active{display:flex}.hero{min-height:700px}.hero h1{font-size:44px}.booking{margin-top:-140px}.booking-grid{grid-template-columns:1fr 1fr}.cards,.reviews,.blog,.about,.contact{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.about-image{height:350px}.umrah-box{padding:40px 25px}.newsletter{flex-direction:column;align-items:stretch}.newsletter-form{min-width:0}.footer-grid{grid-template-columns:1fr}.ai-chat{right:12px;bottom:92px;height:590px}.ai-support-btn{right:15px;bottom:15px}}
+@media(max-width:500px){.hero h1{font-size:38px}.hero p{font-size:16px}.btn{width:100%;text-align:center;margin:5px 0}.btn-outline{margin-left:0}.booking-grid{grid-template-columns:1fr}.destinations,.services,.steps{grid-template-columns:1fr}.section{padding:70px 0}.section-heading h2{font-size:32px}.newsletter{padding:30px 20px}.newsletter-form{flex-direction:column;gap:8px}.newsletter-form input,.newsletter-form button{padding:14px;border-radius:8px}.footer-bottom{flex-direction:column;gap:10px}.ai-chat{width:calc(100vw - 20px);right:10px;bottom:88px}.ai-support-btn{width:60px;height:60px;font-size:24px}}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+<div class="container topbar-content">
+<div><span>📍 Block F 6/2, Nazimabad No. 2, Near Multi Chowk, Karachi</span><span>✉ info@shtravelagency.com</span></div>
+<div class="right"><span>24/7 Travel Support</span><span>☎ +92 300 0000000</span></div>
+</div>
+</div>
+
+<nav class="navbar">
+<div class="container nav-content">
+<a href="#home" class="logo"><div class="logo-icon">SH</div><div class="logo-text">SH TRAVEL AGENCY<small>TRAVEL • TOURS • EXPERIENCES</small></div></a>
+<button class="menu" id="menuBtn">☰</button>
+<div class="nav-links" id="navLinks">
+<a href="#home">Home</a><a href="#flights">Flights</a><a href="#hotels">Hotels</a><a href="#tours">Tours</a><a href="#destinations">Destinations</a><a href="#umrah">Umrah</a><a href="#visa">Visa</a><a href="#services">Services</a><a href="#contact" class="nav-button">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="container"><div class="hero-content">
+<div class="hero-tag">✦ Your Journey Starts Here</div>
+<h1>Explore The World <span>With SH Travel.</span></h1>
+<p>Flights, hotels, international tours, Umrah packages, visa assistance, airport transfers and complete travel solutions — all under one professional travel agency.</p>
+<a href="#tours" class="btn btn-gold">Explore Packages →</a>
+<a href="#contact" class="btn btn-outline">Talk To An Expert</a>
+</div></div>
+</section>
+
+<section class="booking" id="flights">
+<div class="container"><div class="booking-box">
+<div class="tabs">
+<button class="tab active" data-type="flight">✈ Flight</button><button class="tab" data-type="hotel">🏨 Hotel</button><button class="tab" data-type="tour">🗺 Tour</button><button class="tab" data-type="transfer">🚗 Transfer</button>
+</div>
+<form id="searchForm"><div class="booking-grid" id="bookingFields"></div></form>
+</div></div>
+</section>
+
+<section class="section" id="tours"><div class="container">
+<div class="section-heading"><small>Popular Experiences</small><h2>Featured Travel Packages</h2><p>Explore our popular international and holiday packages. Customized packages are also available.</p></div>
+<div class="cards">
+<div class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85')"><span class="badge">BEST SELLER</span></div><div class="card-content"><h3>Dubai Holiday Package</h3><div class="card-info"><span>5 Days / 4 Nights</span><span>★★★★★</span></div><div class="price">PKR 149,999 <small>/ person</small></div><div class="card-buttons"><button class="details" onclick="packageDetails('Dubai Holiday Package')">Details</button><button class="book" onclick="openBooking('Dubai Holiday Package')">Book Now</button></div></div></div>
+<div class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=85')"><span class="badge">POPULAR</span></div><div class="card-content"><h3>Turkey Discovery</h3><div class="card-info"><span>8 Days / 7 Nights</span><span>★★★★★</span></div><div class="price">PKR 239,999 <small>/ person</small></div><div class="card-buttons"><button class="details" onclick="packageDetails('Turkey Discovery')">Details</button><button class="book" onclick="openBooking('Turkey Discovery')">Book Now</button></div></div></div>
+<div class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=85')"><span class="badge">NEW</span></div><div class="card-content"><h3>Malaysia Adventure</h3><div class="card-info"><span>6 Days / 5 Nights</span><span>★★★★★</span></div><div class="price">PKR 174,999 <small>/ person</small></div><div class="card-buttons"><button class="details" onclick="packageDetails('Malaysia Adventure')">Details</button><button class="book" onclick="openBooking('Malaysia Adventure')">Book Now</button></div></div></div>
+</div></div></section>
+
+<section class="section section-light" id="destinations"><div class="container">
+<div class="section-heading"><small>Where To Next?</small><h2>Top Destinations</h2><p>Choose from some of the world's most popular travel destinations.</p></div>
+<div class="destinations">
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=85')"><div class="destination-content"><h3>Dubai</h3><p>UAE • Luxury & Adventure</p></div></div>
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=700&q=85')"><div class="destination-content"><h3>Istanbul</h3><p>Turkey • Culture & History</p></div></div>
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=700&q=85')"><div class="destination-content"><h3>Kuala Lumpur</h3><p>Malaysia • City Escape</p></div></div>
+<div class="destination" style="background-image:url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=700&q=85')"><div class="destination-content"><h3>Maldives</h3><p>Island • Honeymoon</p></div></div>
+</div></div></section>
+
+<section class="section" id="services"><div class="container">
+<div class="section-heading"><small>Complete Travel Solutions</small><h2>Everything You Need To Travel</h2><p>Professional travel services for individuals, families, groups and corporate travelers.</p></div>
+<div class="services">
+<div class="service"><div class="service-icon">✈</div><h3>Flight Booking</h3><p>One-way, round-trip and multi-city flight booking assistance.</p></div>
+<div class="service" id="hotels"><div class="service-icon">🏨</div><h3>Hotel Reservations</h3><p>Hotel booking options for business and leisure travelers.</p></div>
+<div class="service" id="visa"><div class="service-icon">🛂</div><h3>Visa Assistance</h3><p>Visa application guidance and document assistance.</p></div>
+<div class="service" id="umrah"><div class="service-icon">🕋</div><h3>Umrah Packages</h3><p>Umrah packages including hotels, transport and visa assistance.</p></div>
+<div class="service"><div class="service-icon">🚗</div><h3>Airport Transfer</h3><p>Private airport transfers and car rental arrangements.</p></div>
+<div class="service"><div class="service-icon">🎫</div><h3>Travel Insurance</h3><p>Travel protection options for international journeys.</p></div>
+<div class="service"><div class="service-icon">📋</div><h3>Custom Tours</h3><p>Tailor-made tours designed according to your requirements.</p></div>
+<div class="service"><div class="service-icon">🏢</div><h3>Corporate Travel</h3><p>Business travel coordination for companies and teams.</p></div>
+</div></div></section>
+
+<section class="section section-light"><div class="container about">
+<div class="about-image"><div class="about-box"><strong>24/7</strong>Travel assistance and customer support.</div></div>
+<div class="about-content"><small style="color:#a17c14;font-weight:bold;letter-spacing:2px">ABOUT SH TRAVEL</small><h2>Professional Planning. Personal Service.</h2><p>SH Travel Agency is a Karachi-based travel agency providing travel planning and booking assistance for local and international travelers.</p>
+<div class="check"><b>✓</b><span>Personalized travel planning</span></div><div class="check"><b>✓</b><span>Flight and hotel booking assistance</span></div><div class="check"><b>✓</b><span>Visa and documentation guidance</span></div><div class="check"><b>✓</b><span>Umrah and holiday packages</span></div><div class="check"><b>✓</b><span>Airport transfers and car rental</span></div>
+<a href="#contact" class="btn btn-gold">Plan My Trip</a></div>
+</div></section>
+
+<section class="section"><div class="container"><div class="umrah-box"><h2>🕋 Umrah Packages</h2><p>Plan your Umrah journey with hotel accommodation, transport arrangements and visa assistance. Speak with our travel experts for package details.</p><button class="btn btn-gold" onclick="openBooking('Umrah Package')">Request Umrah Package</button></div></div></section>
+
+<section class="section" id="process"><div class="container"><div class="section-heading"><small>Simple Process</small><h2>How It Works</h2><p>Start your journey in four simple steps.</p></div><div class="steps">
+<div class="step"><div class="step-number">01</div><h3>Tell Us</h3><p>Share your destination, dates and travel requirements.</p></div>
+<div class="step"><div class="step-number">02</div><h3>Get Options</h3><p>Receive suitable packages and travel options.</p></div>
+<div class="step"><div class="step-number">03</div><h3>Confirm</h3><p>Select your preferred travel arrangement.</p></div>
+<div class="step"><div class="step-number">04</div><h3>Travel</h3><p>Enjoy your journey with our travel support.</p></div>
+</div></div></section>
+
+<section class="section section-light"><div class="container"><div class="section-heading"><small>Traveler Stories</small><h2>What Our Clients Say</h2></div><div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><p>"Very helpful team. They guided us through the booking process and kept everything organized."</p><strong>— Ahmed R.</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>"The package inquiry was easy and communication was professional from start to finish."</p><strong>— Sara K.</strong></div>
+<div class="review"><div class="stars">★★★★★</div><p>"Very convenient for flight, hotel and visa assistance. The team was responsive."</p><strong>— Usman A.</strong></div>
+</div></div></section>
+
+<section class="section"><div class="container"><div class="section-heading"><small>Travel Inspiration</small><h2>Latest Travel Guides</h2><p>Useful information for planning your next trip.</p></div><div class="blog">
+<div class="card"><div class="blog-image" style="background-image:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85')"></div><div class="blog-content"><small>TRAVEL TIPS</small><h3>How To Plan A Stress-Free International Trip</h3><p>Prepare your itinerary, documents and bookings properly.</p></div></div>
+<div class="card"><div class="blog-image" style="background-image:url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=85')"></div><div class="blog-content"><small>DESTINATIONS</small><h3>Top Experiences To Enjoy In Dubai</h3><p>Ideas for travelers visiting Dubai for the first time.</p></div></div>
+<div class="card"><div class="blog-image" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85')"></div><div class="blog-content"><small>TRAVEL GUIDE</small><h3>International Travel Documents Checklist</h3><p>Important things to prepare before your journey.</p></div></div>
+</div></div></section>
+
+<section class="section section-light" id="contact"><div class="container contact">
+<div class="contact-info"><h2>Let's Plan Your Next Journey</h2><p>Tell us where you want to go and our travel team will help you plan the trip.</p>
+<div class="contact-item">📍 <strong>Office</strong><br>Block F 6/2, Nazimabad No. 2, Near Multi Chowk, Karachi</div>
+<div class="contact-item">☎ <strong>Phone</strong><br>+92 300 0000000</div><div class="contact-item">✉ <strong>Email</strong><br>info@shtravelagency.com</div><div class="contact-item">💬 <strong>WhatsApp</strong><br>Available for travel inquiries</div></div>
+<div class="contact-form"><h2>Send An Inquiry</h2><form id="contactForm">
+<div class="field"><label>Full Name</label><input type="text" placeholder="Your full name" required></div>
+<div class="field"><label>Phone / WhatsApp</label><input type="text" placeholder="+92 3XX XXXXXXX" required></div>
+<div class="field"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+<div class="field"><label>Service</label><select required><option value="">Select Service</option><option>Flight Booking</option><option>Hotel Booking</option><option>Tour Package</option><option>Umrah Package</option><option>Visa Assistance</option><option>Airport Transfer</option><option>Travel Insurance</option><option>Custom Tour</option></select></div>
+<div class="field"><label>Message</label><textarea placeholder="Tell us about your travel plans..." required></textarea></div><button class="btn btn-gold" type="submit">Send Inquiry</button>
+</form></div></div></section>
+
+<section class="section"><div class="container"><div class="newsletter"><div><h2>Get Travel Updates</h2><p>Subscribe for new packages, travel deals and offers.</p></div><form class="newsletter-form" id="newsletterForm"><input type="email" placeholder="Enter your email" required><button>Subscribe</button></form></div></div></section>
+
+<footer><div class="container footer-grid">
+<div><div class="footer-title">SH TRAVEL AGENCY</div><p>Professional travel services from Karachi for flights, hotels, tours, Umrah, visas and complete travel solutions.</p><br><p>📍 Block F 6/2, Nazimabad No. 2, Near Multi Chowk, Karachi</p></div>
+<div><h4>Quick Links</h4><div class="footer-links"><a href="#home">Home</a><a href="#tours">Tour Packages</a><a href="#destinations">Destinations</a><a href="#services">Services</a><a href="#process">How It Works</a><a href="#contact">Contact</a></div></div>
+<div><h4>Travel Services</h4><div class="footer-links"><a href="#flights">Flight Booking</a><a href="#hotels">Hotel Booking</a><a href="#umrah">Umrah Packages</a><a href="#visa">Visa Assistance</a><a href="#services">Travel Insurance</a><a href="#services">Airport Transfer</a></div></div>
+<div><h4>Contact Us</h4><div class="footer-links"><span>☎ +92 300 0000000</span><span>✉ info@shtravelagency.com</span><a href="https://wa.me/923000000000" target="_blank">💬 WhatsApp Us</a><span>24/7 Travel Support</span></div></div>
+</div><div class="container footer-bottom"><span>© 2026 SH Travel Agency. All Rights Reserved.</span><span>Karachi, Pakistan</span></div></footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast">Your request has been submitted!</div>
+
+<!-- ================= 24/7 AI CUSTOMER SUPPORT ================= -->
+<button class="ai-support-btn" id="aiSupportBtn" aria-label="Open 24/7 AI Customer Support">
+    🤖<span class="ai-pulse"></span>
+</button>
+
+<div class="ai-chat" id="aiChat">
+    <div class="ai-head">
+        <div class="ai-head-left">
+            <div class="ai-avatar">AI</div>
+            <div>
+                <strong>SH 24/7 AI Support</strong>
+                <div class="ai-online">● 10 AI travel agents online</div>
+            </div>
+        </div>
+        <button class="ai-close" id="aiClose">×</button>
+    </div>
+
+    <div class="ai-agent-bar">
+        <select id="aiAgent">
+            <option value="general">Aisha AI • General Travel</option>
+            <option value="flight">Zain AI • Flight Expert</option>
+            <option value="hotel">Hina AI • Hotel Expert</option>
+            <option value="tour">Hamza AI • Tour Planner</option>
+            <option value="visa">Sara AI • Visa Guide</option>
+            <option value="umrah">Bilal AI • Umrah Guide</option>
+            <option value="transfer">Omar AI • Transfer Expert</option>
+            <option value="insurance">Noor AI • Travel Insurance</option>
+            <option value="corporate">Daniyal AI • Corporate Travel</option>
+            <option value="emergency">Maya AI • 24/7 Travel Help</option>
+        </select>
+    </div>
+
+    <div class="ai-messages" id="aiMessages"></div>
+
+    <div class="ai-quick">
+        <button class="quick-btn" data-q="I want to book a flight">✈ Flight</button>
+        <button class="quick-btn" data-q="Show me holiday packages">🗺 Tours</button>
+        <button class="quick-btn" data-q="I need visa guidance">🛂 Visa</button>
+        <button class="quick-btn" data-q="I need an Umrah package">🕋 Umrah</button>
+        <button class="quick-btn" data-q="I need a hotel">🏨 Hotel</button>
+    </div>
+
+    <div class="ai-input-row">
+        <input class="ai-input" id="aiInput" type="text" placeholder="Ask your travel question...">
+        <button class="ai-send" id="aiSend">➤</button>
+    </div>
+    <div class="ai-disclaimer">AI guidance is for general travel assistance. Final prices, availability and visa decisions should be confirmed with SH Travel Agency.</div>
+</div>
+
+<script>
+/* ================= BOOKING SEARCH ================= */
+const bookingFields=document.getElementById("bookingFields");
+const templates={
+flight:`<div class="field"><label>From</label><input type="text" placeholder="Karachi (KHI)" required></div><div class="field"><label>To</label><input type="text" placeholder="Dubai (DXB)" required></div><div class="field"><label>Departure</label><input type="date" required></div><div class="field"><label>Passengers</label><select><option>1 Adult</option><option>2 Adults</option><option>3 Adults</option><option>4 Adults</option></select></div><button class="search-btn" type="submit">Search Flights</button>`,
+hotel:`<div class="field"><label>Destination</label><input type="text" placeholder="Dubai, UAE" required></div><div class="field"><label>Check In</label><input type="date" required></div><div class="field"><label>Check Out</label><input type="date" required></div><div class="field"><label>Guests</label><select><option>2 Guests / 1 Room</option><option>2 Guests / 2 Rooms</option><option>4 Guests / 2 Rooms</option><option>6 Guests / 3 Rooms</option></select></div><button class="search-btn" type="submit">Find Hotels</button>`,
+tour:`<div class="field"><label>Destination</label><input placeholder="Dubai / Turkey / Malaysia" required></div><div class="field"><label>Travel Date</label><input type="date" required></div><div class="field"><label>Duration</label><select><option>3 - 5 Days</option><option>6 - 8 Days</option><option>9 - 12 Days</option><option>13+ Days</option></select></div><div class="field"><label>Travelers</label><select><option>1 - 2</option><option>3 - 5</option><option>6 - 10</option><option>10+</option></select></div><button class="search-btn" type="submit">Find Tours</button>`,
+transfer:`<div class="field"><label>Pickup</label><input placeholder="Airport / Hotel" required></div><div class="field"><label>Drop Off</label><input placeholder="Hotel / Address" required></div><div class="field"><label>Date</label><input type="date" required></div><div class="field"><label>Passengers</label><select><option>1 - 3</option><option>4 - 6</option><option>7 - 10</option><option>10+</option></select></div><button class="search-btn" type="submit">Request Transfer</button>`
+};
+function loadBooking(type){bookingFields.innerHTML=templates[type];document.querySelectorAll(".tab").forEach(tab=>tab.classList.toggle("active",tab.dataset.type===type))}
+loadBooking("flight");
+document.querySelectorAll(".tab").forEach(tab=>tab.addEventListener("click",()=>loadBooking(tab.dataset.type)));
+document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();showToast("Your search request has been received. Our travel team will contact you shortly.")});
+
+/* ================= MODALS ================= */
+function packageDetails(name){
+document.getElementById("modalContent").innerHTML=`<h2>${name}</h2><p style="color:#6b7280;margin-bottom:20px">Package details can be customized according to your travel dates, number of passengers and budget.</p><div class="check">✓ Hotel accommodation options</div><div class="check">✓ Flight booking assistance</div><div class="check">✓ Airport transfer options</div><div class="check">✓ Personalized itinerary</div><div class="check">✓ Travel support</div><button class="btn btn-gold" onclick="openBooking('${name}')">Request This Package</button>`;
+document.getElementById("modal").classList.add("show")
+}
+function openBooking(packageName){
+document.getElementById("modalContent").innerHTML=`<h2>Book / Inquire</h2><p style="color:#6b7280;margin-bottom:20px">${packageName}</p><form class="modal-form" id="bookingForm"><div class="field"><label>Full Name</label><input type="text" placeholder="Your name" required></div><div class="field"><label>Phone / WhatsApp</label><input type="text" placeholder="+92 3XX XXXXXXX" required></div><div class="field"><label>Email</label><input type="email" placeholder="your@email.com" required></div><div class="field"><label>Travel Date</label><input type="date" required></div><div class="field"><label>Number of Travelers</label><select><option>1 Traveler</option><option>2 Travelers</option><option>3-5 Travelers</option><option>6-10 Travelers</option><option>10+ Travelers</option></select></div><div class="field"><label>Message</label><textarea placeholder="Tell us your requirements"></textarea></div><button class="btn btn-gold" type="submit">Submit Inquiry</button></form>`;
+document.getElementById("modal").classList.add("show");
+document.getElementById("bookingForm").addEventListener("submit",e=>{e.preventDefault();closeModal();showToast("Booking inquiry submitted successfully!")})
+}
+function closeModal(){document.getElementById("modal").classList.remove("show")}
+window.addEventListener("click",e=>{if(e.target===document.getElementById("modal"))closeModal()});
+document.getElementById("contactForm").addEventListener("submit",function(e){e.preventDefault();showToast("Thank you! Your inquiry has been submitted.");this.reset()});
+document.getElementById("newsletterForm").addEventListener("submit",function(e){e.preventDefault();showToast("Thank you for subscribing!");this.reset()});
+function showToast(message){const toast=document.getElementById("toast");toast.textContent=message;toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),4000)}
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("active"));
+document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("active")));
+
+/* ================= 10-AGENT AI CUSTOMER SUPPORT ================= */
+const agents={
+general:{name:"Aisha AI",greet:"Assalam-o-Alaikum! I am Aisha, your 24/7 SH Travel AI assistant. I can guide you about flights, hotels, tours, visas, Umrah and transfers. What would you like to plan?"},
+flight:{name:"Zain AI",greet:"Hi! I am Zain, your Flight AI Agent. Tell me your departure city, destination, travel date and number of passengers."},
+hotel:{name:"Hina AI",greet:"Hello! I am Hina, your Hotel AI Agent. Tell me your destination, check-in/check-out dates and preferred budget."},
+tour:{name:"Hamza AI",greet:"Welcome! I am Hamza, your Tour Planning AI Agent. I can help you explore Dubai, Turkey, Malaysia, Maldives and custom tours."},
+visa:{name:"Sara AI",greet:"Hello! I am Sara, your Visa Guidance AI Agent. Tell me your destination and I can provide a general document and planning checklist."},
+umrah:{name:"Bilal AI",greet:"Assalam-o-Alaikum! I am Bilal, your Umrah AI Guide. I can help you understand Umrah package planning, hotels, transport and visa assistance."},
+transfer:{name:"Omar AI",greet:"Hi! I am Omar, your Airport Transfer AI Agent. Tell me your pickup point, drop-off location, date and passenger count."},
+insurance:{name:"Noor AI",greet:"Hello! I am Noor, your Travel Insurance AI Agent. I can explain common travel-insurance coverage and what to ask before purchasing."},
+corporate:{name:"Daniyal AI",greet:"Hello! I am Daniyal, your Corporate Travel AI Agent. I can guide you with business flights, hotels, group travel and travel coordination."},
+emergency:{name:"Maya AI",greet:"Hi! I am Maya, your 24/7 Travel Help AI Agent. If your question is urgent, tell me what happened and your travel situation."}
+};
+const aiChat=document.getElementById("aiChat"),aiMessages=document.getElementById("aiMessages"),aiAgent=document.getElementById("aiAgent"),aiInput=document.getElementById("aiInput");
+document.getElementById("aiSupportBtn").addEventListener("click",()=>{aiChat.classList.toggle("open");if(aiMessages.children.length===0)addAIMessage(agents.general.greet,"general")});
+document.getElementById("aiClose").addEventListener("click",()=>aiChat.classList.remove("open"));
+
+function addAIMessage(text,type="bot"){
+const row=document.createElement("div");row.className="ai-msg "+(type==="user"?"user":"bot");
+const bubble=document.createElement("div");bubble.className="ai-bubble";
+if(type!=="user"){const name=document.createElement("div");name.className="ai-agent-name";name.textContent=agents[aiAgent.value].name;bubble.appendChild(name)}
+const content=document.createElement("div");content.textContent=text;bubble.appendChild(content);row.appendChild(bubble);aiMessages.appendChild(row);aiMessages.scrollTop=aiMessages.scrollHeight
+}
+function getAIReply(message,agentKey){
+const m=message.toLowerCase();
+if(/hello|hi|salam|assalam/.test(m))return agents[agentKey].greet;
+if(/flight|ticket|airline|plane|fly/.test(m))return "For flight planning, please share your From city, To city, travel date and number of passengers. I can then guide you on the next booking steps.";
+if(/hotel|room|stay|resort/.test(m))return "For hotel planning, please share the destination, check-in date, check-out date, number of guests and your approximate budget.";
+if(/tour|package|holiday|vacation|dubai|turkey|malaysia|maldives/.test(m))return "We currently show Dubai, Turkey and Malaysia packages on this website. You can also request a customized itinerary. Tell me your destination, dates and travelers.";
+if(/visa|document|passport/.test(m))return "I can provide general visa-planning guidance. Requirements vary by destination and applicant. Tell me the destination and I will give you a checklist of common documents to discuss with the agency.";
+if(/umrah|makkah|madinah|mecca|medina/.test(m))return "For Umrah, SH Travel can assist with package planning, hotel accommodation, transport and visa assistance. Tell me your preferred travel month, duration and number of travelers.";
+if(/transfer|airport|pickup|pick up|drop/.test(m))return "For an airport transfer, please share pickup point, drop-off location, date/time and passenger count.";
+if(/insurance/.test(m))return "Travel insurance can commonly include benefits such as medical emergencies, trip disruption or baggage-related coverage depending on the policy. Tell me your destination and trip type for general guidance.";
+if(/corporate|business|company|office/.test(m))return "For corporate travel, we can guide you with business flights, hotels, group arrangements and travel coordination. Tell me your company travel requirement.";
+if(/price|cost|rate|budget|pkr/.test(m))return "Prices and availability can change. Please tell me the service, destination, dates and number of travelers; the SH Travel team can confirm the current quotation.";
+if(/contact|whatsapp|phone|call/.test(m))return "You can contact SH Travel Agency at +92 300 0000000 or info@shtravelagency.com. WhatsApp support is also available.";
+if(/thank/.test(m))return "You're welcome! I am available 24/7. Feel free to ask about flights, hotels, tours, visas, Umrah or transfers.";
+return "I can help with flights, hotels, tours, visas, Umrah, airport transfers, insurance and corporate travel. Please tell me your destination and what you need help with.";
+}
+function sendAIMessage(text){
+text=(text||"").trim();if(!text)return;addAIMessage(text,"user");const key=aiAgent.value;setTimeout(()=>addAIMessage(getAIReply(text,key),key),450)
+}
+document.getElementById("aiSend").addEventListener("click",()=>{const v=aiInput.value;aiInput.value="";sendAIMessage(v)});
+aiInput.addEventListener("keydown",e=>{if(e.key==="Enter"){const v=aiInput.value;aiInput.value="";sendAIMessage(v)}});
+document.querySelectorAll(".quick-btn").forEach(btn=>btn.addEventListener("click",()=>sendAIMessage(btn.dataset.q)));
+aiAgent.addEventListener("change",()=>{aiMessages.innerHTML="";addAIMessage(agents[aiAgent.value].greet,"general")});
+</script>
+</body>
+</html>
